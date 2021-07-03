@@ -1,0 +1,324 @@
+
+
+
+body{
+    font-family: "Open Sans";
+    font-size:16px;
+    font-weight:600;
+    line-height:1.5;
+}
+
+.container{
+    width:1170px;
+    padding-left:15px;
+    padding-right:15px;
+    margin:0px auto;
+    display:flex;
+   
+}
+ul{
+    list-style-type: none;
+    padding:0px;
+}
+
+/* ============= HEADER ============ */
+ #header{
+     background:#282828;
+     padding-top:26px;
+     padding-bottom:10px;
+     margin-bottom:35px ;
+    
+ }
+
+ form#search input{
+    background:#131619;
+    width:248px;
+    border:none;
+    outline:none;
+    padding:9px 42px 9px 15px;
+    color:#919395;
+  
+}
+ form#search{
+     position:relative;
+ }
+ form#search button{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    background:none;
+    border:none;
+    color:#a2a1a1;
+    padding:9px 12px;
+
+ }
+
+ ul#main-menu li a{
+     padding: 6px 20px;
+     color: rgb(245, 243, 239);
+     display: block;
+ }
+ ul#main-menu li:first-child a{
+    padding-left:0px;
+}
+
+ul#main-menu li:hover a,
+ul#main-menu li.active a
+{
+   color:#4aa9df;
+   text-decoration: none;
+}
+.boder-red {
+    /* background: red; */
+    /* width: 100%; */
+    border-right: 10px solid red;
+  flex: 100%;
+    margin-top: 22px;
+    height: 36px;
+    margin-bottom: 20px;
+}
+/* ====================feauture*/
+.box .box-head h3{
+    display: inline-block;
+    color:#eeee;
+    background :#23282d;
+    font-weight:600;
+    padding:1px 16px ;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-size:16px;
+}
+.box .box-body{
+    padding-top:20px;
+    
+}
+.box.featured-post .box-body{
+    padding-bottom: 30px;
+    border-bottom: #dadada solid 1px ;
+    
+}
+ul.list-futured-post li a{
+    /* phaỉ đối sang block thì mới chỉnh margin với padding được  */
+    display: inline-block;
+    color:#23282d;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top:20px;
+    overflow: hidden;
+}
+
+ul.list-futured-post.d-flex li a img{
+   transition:0.5s;
+
+}
+ul.list-futured-post.d-flex li a:hover img {
+    transform: scale(1.05);
+   
+}
+div#wp-content {
+    margin-top: 30px;
+}
+
+div#content {
+    padding-right:15px;
+    max-width: 765px;
+}
+
+div#sidebar {
+    padding-left:15px;
+    max-width:375px
+}
+h3.write-news {
+    background: #4646e6 !important;
+    display: block;
+    width: 150px;
+    /* border: 1px solid #ff00000a; */
+}
+
+.box.new-post .box-head {
+    border-bottom: 3px solid #4646e6;
+}
+ul.list-post li a:hover img {
+    box-shadow: 0px 3px 6px 0px black;
+}
+
+
+
+ul.list-post li{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+ul.list-post li .post-thumb{
+    display:block;
+    padding-right:15px;
+    flex:263px;
+}
+ul.list-post li .more-info{
+    flex:457px;
+    padding-left:15px;
+}
+ul.list-post li .more-info a.post-title{
+    display: block;
+    color:#111111;
+    font-size:21px;
+    font-weight: 600;
+}
+ul.list-post li .more-info:hover a.post-title{
+
+    color:#4db2ec;
+    text-decoration: none;
+}
+ul.list-post li .more-info .post-published{
+    font-size:11px; 
+    font-weight: 600;
+    padding:6px 0px;
+}
+ul.list-post li .more-info .post-published .post-author{
+  color:#111111;
+ 
+}
+ul.list-post li .more-info .post-published .post-date{
+    color:#aaa;
+}
+ul.list-post li .more-info .discription{
+    font-size:13px;
+    font-weight: 400;
+    color:#777777;
+    margin-bottom: 0px;
+}
+
+/* ============sidebar */
+
+#sidebar a.ads{
+    display: block;
+    margin-bottom: 40px;
+}
+.box.box-topic .box-head h3{
+    background: #ff2d2d;
+   
+}
+.box.box-topic .box-head{
+    border-bottom: #ff2d2d solid 2px  ;
+}
+ul.list-topic{
+    margin-bottom: 0px;
+}
+ul.list-topic li a{
+    display: block;
+    color:#212121;
+    font-size:16px;
+    font-weight: 400;
+    position: relative;
+    padding:6px 0px;
+    
+    
+}
+ul.list-topic li span.num-post{
+    position:absolute;
+    top:8px;
+    right:20px;
+}
+ul.list-topic li:hover a{
+    color:#ff7373;
+    text-decoration: none;
+    
+}
+/* =============== Footer =============  */
+
+footer{
+
+    background:#282828;
+    padding-top:52px;
+    padding-bottom:75px;
+    color:#f6f6f6;
+}
+
+footer .box .box-head h3{
+    background:none;
+    padding-left: 0px;
+    padding-right:0px;
+
+}
+footer .box.footer-logo{
+    width:280px;
+    /* khi đã thiết lập như này rồi thì chỉnh padding nó sẽ ko nở ra nữa  */
+    padding-right:15px;
+}
+footer .box.footer-logo .box-head{
+    visibility: hidden;
+    /* dùng để ẩn 1 thuộc tính  */
+}
+footer .box.footer-aboutus{
+    width:682px;
+    /* khi đã thiết lập như này rồi thì chỉnh padding nó sẽ ko nở ra nữa  */
+    padding-right:195px;
+    padding-left:15px;
+    font-size:18px;
+}
+footer .box.footer-aboutus .box-body p{
+    color:#f6f6f6;
+    font-size:14px;
+    font-weight: 400;
+}
+footer .box.footer-aboutus a{
+    color:#4db2ec;
+}
+
+footer .box.footer-followus  {
+    width:186px;
+    /* khi đã thiết lập như này rồi thì chỉnh padding nó sẽ ko nở ra nữa  */
+    padding-left:15px;
+}
+ul.list-social{
+    margin-bottom: 0px;
+}
+ul.list-social li a{
+    display: block;
+    background:#434648;
+    padding:5px 10px;
+    color:#eee;
+    margin:0px 5px;
+}
+
+ul.list-social li:first-child a{
+    margin-left: 0px;
+}
+ul.list-social li a:hover{
+    color:#4db2ec;
+}
+footer .box .box-body{
+   
+    padding-top:40px;
+}
+
+/* ===================== copyright =====================  */
+
+#wp-copyright{
+    background:#222527;
+    
+}
+#wp-copyright p{
+    color:#fff;
+    margin-bottom: 0px ;
+    padding:13px 0px;
+    font-size:14px;
+}
+#wp-copyright  ul.footer-menu{
+    margin-bottom: 0px;
+}
+#wp-copyright  ul.footer-menu li a{
+    display: block;
+    font-size:14px;
+    color:#f3f3f3;
+    padding:13px 13px;
+
+}
+#wp-copyright  ul.footer-menu li:last-child a{
+padding-right:0px;
+}
+
+#wp-copyright  ul.footer-menu li:hover a{
+    color:#4db2ec;
+    text-decoration: none;
+}

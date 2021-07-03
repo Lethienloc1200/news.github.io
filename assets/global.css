@@ -1,0 +1,28 @@
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+.text-left{
+    text-align:left;
+}
+.text-right{
+    text-align:right;
+}
+.text-center{
+    text-align:center;
+}
+.text-jutify{
+    text-align:justify;
+}
+.text-uppercase{
+    text-transform:uppercase;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.d-flex{
+    display:flex;
+}
